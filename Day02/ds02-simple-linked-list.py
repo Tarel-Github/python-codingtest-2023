@@ -64,6 +64,59 @@ if __name__ == '__main__':
         pre.link = node
         memory.append(node)
 
-    printNodes(head)
+def deleteNode(deleteData):
+    global memory, head, current, pre
+
+    if head.data == deleteData:
+        current = head
+        head = head.link
+        del(current)
+        return
+    current = head
+    while current.link != None:
+        pre = current
+
+# 노드 검색
+def findNode(findData):
+    global memory, pre, current, head
+    current = head
+    if current.data == findData:
+        return current
+    while current.link != None:
+        current = current.link
+        if current.data == findData:
+            return current
+    return Node()
+
+insertNode('재남', '문별')
+printNodes(head)
+
+insertNode('사나', '솔라')
+printNodes(head)
+
+insertNode('재남', '문별')
+printNodes(head)
+
+deleteNode('지효')
+printNodes(head)
+
+deleteNode('재남')
+printNodes(head)
+
+print('노드 검색 ---')
+
+result = findNode('정연')
+if result.data != None:
+    print('데이터 찾았습니다.')
+else:
+    print('검색한 데이터 없습니다.')
+
+result = findNode('재남')
+if result.data != None:
+    print('데이터 찾았습니다.')
+else:
+    print('검색한 데이터 없습니다.')
+
+
 
 
