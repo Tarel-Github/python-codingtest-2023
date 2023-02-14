@@ -51,6 +51,7 @@ def peek():
         return stack[top]
 
 # 메인 엔트리
+'''
 if __name__ == '__main__':
     top = -1
     SIZE = int(input('스텍사이즈 입력 >> '))
@@ -77,4 +78,4 @@ if __name__ == '__main__':
 
     print('스택 프로그램 종료')
 
-
+'''
