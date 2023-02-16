@@ -34,10 +34,16 @@ if __name__ == "__main__":
                 else: # 방문한 적이 없으면 다음 정점으로 지정
                     next = vertex
                     break # for문 완전 빠져나감
+                
         if next != None: # 다음 방문할 정점이 있으면
             current = next
             stack.append(current)
             visitedAry.append(current)
         else: # 다음 방문할 정점이 없으면
             current = stack.pop() # 스택에서 꺼내옴
+
+    print('방문순서 --> ', end = ' ')
+    for i in visitedAry:
+        print(chr(ord('A')+i), end = ' ->')
+
 
