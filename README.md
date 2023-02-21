@@ -78,5 +78,7 @@ for i in range(N):
         - [x] PriorityQueue (우선순위 큐)
         - [ ] heapq (힙큐)
     - 알고리즘 학습
-        - [ ] 탐색 - DFS / BFS
+        - [x] 탐색 - DFS / BFS
+        - [ ] 그리디
+
         
