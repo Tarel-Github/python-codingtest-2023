@@ -75,6 +75,8 @@ for i in range(N):
 1. 코딩테스트 학습
     - 자료구조
         - [x] 그래프
+        - [x] PriorityQueue (우선순위 큐)
+        - [ ] heapq (힙큐)
     - 알고리즘 학습
         - [ ] 탐색 - DFS / BFS
         

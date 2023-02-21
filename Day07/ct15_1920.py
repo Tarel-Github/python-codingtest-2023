@@ -11,7 +11,7 @@ for i in range(M):
     target = targetList[i]
     # 이진
     start = 0
-    end = N
+    end = N-1
     while start <= end:
         midle = (start + end) //2
         midVal = A[midle] # 중앙값
@@ -21,7 +21,7 @@ for i in range(M):
             start = midle + 1
         else: # 값 찾음
             find = True
-        break
+            break
     if find:
         print(1)
     else:
