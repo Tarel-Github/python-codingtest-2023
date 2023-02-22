@@ -1,5 +1,4 @@
 # 백준 12891 DNA 비밀번호
-
 checkList = [0]
 myList = [0] * 4
 checkSecret = 0
@@ -52,6 +51,7 @@ checkList = list(map(int, input().split()))
 # print(Result)
 # print(A)
 # print(checkList)
+
 for i in range(4):
     if checkList[i] == 0:
         checkSecret += 1
