@@ -49,12 +49,12 @@
         - [x] 슬라이딩윈도우
         - [x] 정렬  
 
-```py
+```python
 # 백준 11003 * 최소값 찾기 1
 from collections import deque
-
+# from pythonds.basic.deque import Deque
+mydeque = deque()
 N, L =  map (int, input().split()) # 12 3
-mydeque=deque()
 now = list(map(int, input().split()))# 1 5 2 3 6 2 3 7 3 5 2 6 
 
 
@@ -81,4 +81,11 @@ for i in range(N):
         - [x] 탐색 - DFS / BFS
         - [ ] 그리디
         - [ ] 정수론
+
+# 8일차
+1. 코딩테스트 학습
+    - 자료구조
         
+    - 알고리즘
+        - [ ] 정수론
+        - [ ] 그래프 활용
