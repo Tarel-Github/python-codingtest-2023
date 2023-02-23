@@ -27,7 +27,7 @@ for i in range(1, N + 1):
             print(0, end = ' ')
         else:
             print(distance[i][j], end = ' ')
-    print()
+    print() 
 
-    
+
 
