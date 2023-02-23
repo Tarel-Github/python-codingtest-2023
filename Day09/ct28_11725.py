@@ -25,3 +25,7 @@ DFS(1) # 부모노드부터 DFS 시작
 
 for i in range(2, N+1):
     print(answer[i])
+
+try:
+    print('a')
+except: ValueError
