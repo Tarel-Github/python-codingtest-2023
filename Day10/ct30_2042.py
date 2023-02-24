@@ -52,7 +52,7 @@ def getSum(s, e):
 
 for _ in range(M + K):
     question, s, e = map(int, input().split())
-    if question == 1:
+    if question == 1: # 값변경
         changeVal(leftNodeStartIndex + s, e)
     elif question == 2:
         s = s + leftNodeStartIndex
